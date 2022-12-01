@@ -2,5 +2,20 @@
 
 .beginning {
   height: 100vh;
-  background-color: red;
+  background: url("../../public/images/bg-tablet-pattern.svg") no-repeat top / contain;
+  background-position-x: 20vw;
+  background-position-y: -15vw;
+}
+
+@media screen and (min-width:940px) {
+  .beginning {
+    background-position-x: 50vw;
+  }
+}
+
+@media #{$desktop} {
+  .beginning {
+    background-position-x: 55vw;
+    background-position-y: -10vw;
+  }
 }
