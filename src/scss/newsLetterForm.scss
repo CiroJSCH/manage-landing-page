@@ -1,0 +1,55 @@
+@import "variables";
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+
+  .form__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    gap: .5rem;
+    max-width: 20rem;
+
+    .field {
+      border-radius: $radius;
+      padding: .8rem;
+      outline: none;
+      border: none;
+      width: 100%;
+    }
+
+    .error {
+      color: coral;
+      padding-left: .8rem;
+    }
+  }
+
+  .form__button {
+    border-radius: $radius;
+    border: none;
+    background-color: $primaryRed;
+    color: white;
+    padding: .8rem;
+    width: 20%;
+    max-width: 10rem;
+    max-height: 2.7rem;
+  }
+
+}
+
+@media screen and (min-width:1440px) {
+  .form {
+    width: 100%;
+    .form__input {
+      width: 70%;
+    }
+    .form__button {
+      width: 30%;
+    }
+  }
+}

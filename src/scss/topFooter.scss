@@ -1,0 +1,60 @@
+@import "variables";
+
+.topFooter {
+  background: $primaryRed;
+  padding: 3rem 0;
+
+  .topFooter__container {
+    background: url("/images/bg-simplify-section-mobile.svg") no-repeat left /
+      contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 0;
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.4rem;
+      font-weight: 500;
+      width: 80%;
+      line-height: 1.5;
+    }
+
+    button {
+      border-radius: $radius;
+      color: $primaryRed;
+      border: none;
+      padding: 1rem;
+      width: 40%;
+      font-size: 1rem;
+      font-weight: 700;
+      max-width: 15rem;
+
+      &:hover {
+        cursor: pointer;
+        color: rgba($primaryRed, $alpha: 0.6);
+      }
+    }
+  }
+}
+
+@media #{$desktop} {
+  .topFooter {
+    background: url("/images/bg-simplify-section-desktop.svg") no-repeat center / cover $primaryRed;
+    padding: 2rem 0;
+    .topFooter__container {
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-between;
+      margin: 0 auto;
+      background: none;
+
+      h1 {
+        text-align: left;
+        width: 40%;
+      }
+    }
+  }
+}
