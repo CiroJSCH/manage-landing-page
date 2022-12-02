@@ -1,0 +1,107 @@
+@import "variables";
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  img {
+    width: 100%;
+  }
+
+  .banner__text {
+    text-align: center;
+    line-height: 1.5;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $primaryBlue;
+    }
+
+    p {
+      color: $grayBlue;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    button {
+      border-radius: $radius;
+      background-color: $primaryRed;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      font-family: $font;
+      padding: 1rem 2.5rem;
+      margin-bottom: 2rem;
+      transition: .5s box-shadow;
+
+      &:hover {
+        box-shadow: 0 4px 10px 0 rgba($primaryRed, 0.8);
+      }
+    }
+  }
+}
+
+@media screen and (min-width:940px) {
+  .banner {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 4rem 0;
+    .banner__text {
+      text-align: left;
+      h1 {
+        width: 90%;
+      }
+      p {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .banner {
+    width: 80%;
+    img {
+      max-width: 35rem;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .banner {
+    img {
+      max-width: 40rem;
+    }
+    .banner__text {   
+      h1 {
+        font-size: 3.5rem;
+        width: 90%;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1600px) {
+  .banner {
+    .banner__text {   
+      h1 {
+        font-size: 4rem;
+        width: 80%;
+      }
+      p {
+        width: 60%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
