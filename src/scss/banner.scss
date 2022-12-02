@@ -1,5 +1,13 @@
 @import "variables";
 
+.banner-bg {
+  background: url("../../public/images/bg-tablet-pattern.svg") no-repeat top / contain;
+  background-position-x: 29vh;
+  background-position-y: 50vh;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -39,6 +47,7 @@
       font-family: $font;
       padding: 1rem 2.5rem;
       margin-bottom: 2rem;
+      cursor: pointer;
       transition: .5s box-shadow;
 
       &:hover {
@@ -49,10 +58,14 @@
 }
 
 @media screen and (min-width:940px) {
+  .banner-bg {
+    background: none;
+  }
   .banner {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 4rem 0;
+    background: none;
     .banner__text {
       text-align: left;
       h1 {
