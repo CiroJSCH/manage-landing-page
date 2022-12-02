@@ -38,6 +38,12 @@
     width: 20%;
     max-width: 10rem;
     max-height: 2.7rem;
+    transition: .5s box-shadow;
+
+    &:hover {
+      box-shadow: 0 4px 10px 0 rgba($primaryRed, 0.8);
+    }
+
   }
 
 }
@@ -46,7 +52,7 @@
   .form {
     width: 100%;
     .form__input {
-      width: 70%;
+      width: 75%;
     }
     .form__button {
       width: 30%;
