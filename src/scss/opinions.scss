@@ -1,0 +1,49 @@
+@import "variables";
+
+.opinions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  width: 90%;
+  margin: 0 auto;
+
+  h3 {
+    color: $primaryBlue;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .btn {
+    border-radius: $radius;
+    background-color: $primaryRed;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    font-family: $font;
+    padding: 1rem 2.5rem;
+    max-width: 15rem;
+    cursor: pointer;
+    transition: .5s box-shadow;
+    margin-top: 5rem;
+
+    &:hover {
+      box-shadow: 0 4px 10px 0 rgba($primaryRed, 0.8);
+    }
+  }
+
+  .slick-dots {
+    position: relative;
+    bottom: -15px;
+  }
+
+  .slick-dots li button:before{
+    font-size: 10px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $primaryRed;
+  }
+}
