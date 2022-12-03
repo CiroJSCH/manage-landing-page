@@ -15,7 +15,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
     <nav className="navbar">
-      <img className="navbar__logo" src={logo} />
+      <img className="navbar__logo" src={logo} alt="Manage Logo"/>
       <div className={`modal ${active && "fadeIn"}`} onClick={() => setActive(!active)}>
         <div className={`navbar__links ${active && "active"}`}>
           <ul>
